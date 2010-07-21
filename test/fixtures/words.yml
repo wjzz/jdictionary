@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  japanese: MyString
+  reading: MyString
+  definition: MyText
+  category: MyString
+  comments: MyText
+  tags: MyString
+
+two:
+  japanese: MyString
+  reading: MyString
+  definition: MyText
+  category: MyString
+  comments: MyText
+  tags: MyString
