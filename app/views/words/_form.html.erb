@@ -1,8 +1,12 @@
 <%= render :super %>
 
-<hr />
-
-
+<ol>
+<li>
+<dl>
+<dt>
+Available tags
+</dt>
+<dd>
 <div id="tags" style="margin-top:30px;">
 <% tags = Word.tag_counts %>
 <% tags.each do |tag|%>
@@ -10,3 +14,7 @@
 <%= tag.name %></span>
 <% end %>
 </div>
+</dd>
+</dl>
+</li>
+</ol>
