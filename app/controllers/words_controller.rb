@@ -4,10 +4,10 @@ class WordsController < ApplicationController
     config.list.always_show_create = true
     
     # The order in the form
-    config.columns = [:japanese, :reading, :definition, :category, :tags, :comments]
+    config.columns = [:japanese, :reading, :definition, :category, :tag_list, :comments]
 
     # Fields listed in the main list
-    config.list.columns = [:japanese, :reading, :definition, :tags]
+    config.list.columns = [:japanese, :reading, :definition, :tag_list]
 
     ## Field configurations
     # Definition textarea size

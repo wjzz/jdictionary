@@ -1,0 +1,12 @@
+<%= render :super %>
+
+<hr />
+
+
+<div id="tags" style="margin-top:30px;">
+<% tags = Word.tag_counts %>
+<% tags.each do |tag|%>
+<span class="tag<%= ' selectedTag' if @record.tag_list.index(tag.name) %>" onclick="selectTag(this);">
+<%= tag.name %></span>
+<% end %>
+</div>

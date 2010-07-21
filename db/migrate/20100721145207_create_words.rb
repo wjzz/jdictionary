@@ -6,7 +6,6 @@ class CreateWords < ActiveRecord::Migration
       t.text :definition
       t.string :category
       t.text :comments
-      t.string :tags
 
       t.timestamps
     end
