@@ -8,7 +8,7 @@ Available tags
 </dt>
 <dd>
 <div id="tags" style="margin-top:30px;">
-<% tags = Word.tag_counts %>
+<% tags = Word.tag_counts.sort_by {|t| t.name } %>
 <% tags.each do |tag|%>
 <span class="tag<%= ' selectedTag' if @record.tag_list.index(tag.name) %>" onclick="selectTag(this);">
 <%= tag.name %></span>

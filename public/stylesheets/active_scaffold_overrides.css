@@ -1,0 +1,19 @@
+.active-scaffold tr.record .japanese-column {
+    font-size: 18px;
+}
+
+.active-scaffold tr.record .reading-column {
+    font-size: 14px;
+}
+
+.active-scaffold tr.record .definition-column {
+    font-size: 12px;
+}
+
+.active-scaffold tr.record .tag_list-column {
+    font-size: 13px;
+}
+
+.active-scaffold .show-view dd {
+    font: 14px arial;
+}
