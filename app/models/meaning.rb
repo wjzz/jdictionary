@@ -1,5 +1,5 @@
 class Meaning < ActiveRecord::Base
-  CATEGORY = %w(idiom word_meaning)
+  CATEGORY = %w(word_meaning idiom)
   
   validates_inclusion_of :category, :in => CATEGORY
   belongs_to :word

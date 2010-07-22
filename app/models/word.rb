@@ -1,5 +1,5 @@
 class Word < ActiveRecord::Base
-  CATEGORY = %w(noun u_verb ru_verb na_adjective i_adjective particle other)
+  CATEGORY = %w(noun u_verb ru_verb suru_verb na_adjective i_adjective particle other)
 
   validates_inclusion_of :category, :in => CATEGORY
   has_many :meanings
@@ -9,6 +9,10 @@ class Word < ActiveRecord::Base
   end
 
   def tag_list
-    tags.split(/\s*,\s*/)
+    if tags.nil?
+      []
+    else
+      tags.split(/\s*,\s*/)
+    end
   end
 end
