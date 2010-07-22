@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20100722092549) do
     t.string   "expression"
     t.string   "text"
     t.string   "english"
+    t.text     "sentences"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -27,9 +28,9 @@ ActiveRecord::Schema.define(:version => 20100722092549) do
     t.text     "definition"
     t.string   "category"
     t.text     "comments"
+    t.string   "tags",       :default => ""
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "tags",       :default => ""
   end
 
 end

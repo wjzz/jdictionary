@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  meaning_id: 1
+  japanese: MyText
+  translation: MyText
+  source: MyString
+
+two:
+  meaning_id: 1
+  japanese: MyText
+  translation: MyText
+  source: MyString

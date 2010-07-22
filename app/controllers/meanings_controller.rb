@@ -6,7 +6,10 @@ class MeaningsController < ApplicationController
     config.columns[:text].form_ui = :textarea
     config.columns[:text].options = { :rows => 5, :cols => 80 }
 
-    config.columns = [:category, :expression, :text, :english]
+    config.columns[:sentences].options = { :rows => 10, :cols => 80 }
+
+    config.columns = [:category, :expression, :text, :english, :sentences]
+    config.subform.layout = :vertical
 
   end
 end

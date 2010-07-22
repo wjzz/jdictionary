@@ -6,6 +6,7 @@ class CreateMeanings < ActiveRecord::Migration
       t.string :expression
       t.string :text
       t.string :english
+      t.text :sentences
 
       t.timestamps
     end
