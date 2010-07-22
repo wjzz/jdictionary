@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  word_id: 1
+  category: MyString
+  expression: MyString
+  text: MyString
+  english: MyString
+
+two:
+  word_id: 1
+  category: MyString
+  expression: MyString
+  text: MyString
+  english: MyString
