@@ -9,13 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100722092549) do
+ActiveRecord::Schema.define(:version => 20100722141925) do
 
   create_table "meanings", :force => true do |t|
     t.integer  "word_id"
-    t.string   "category"
-    t.string   "expression"
-    t.string   "text"
+    t.string   "polish"
     t.string   "english"
     t.text     "sentences"
     t.datetime "created_at"

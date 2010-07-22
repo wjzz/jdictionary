@@ -8,8 +8,8 @@ Available tags
 </dt>
 <dd>
 <div id="tags" style="margin-top:30px;">
-<% tags = Word.all.map {|w| w.tag_list }.flatten.uniq %>
-<% tags.each do |tag|%>
+<%# tags = Word.all.map {|w| w.tag_list }.flatten.uniq %>
+<% Word.all_tags.each do |tag|%>
 <span class="tag<%= ' selectedTag' if @record.tag_list.index(tag) %>" onclick="selectTag(this);">
 <%= tag %></span>
 <% end %>

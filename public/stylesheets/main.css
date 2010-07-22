@@ -6,5 +6,9 @@
 }
 
 .tag {
+    cursor: hand;
+}
 
+.japanese {
+    font-size: 25px;
 }

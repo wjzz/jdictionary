@@ -1,14 +1,14 @@
 class MeaningsController < ApplicationController
   active_scaffold :meaning do |config|
-    config.columns[:category].form_ui = :select
-    config.columns[:category].options = { :options => Meaning::CATEGORY.map {|t| [t,t] } }
+    config.columns[:polish].form_ui = :textarea
+    config.columns[:polish].options = { :rows => 3, :cols => 80 }
 
-    config.columns[:text].form_ui = :textarea
-    config.columns[:text].options = { :rows => 5, :cols => 80 }
+    config.columns[:english].form_ui = :textarea
+    config.columns[:english].options = { :rows => 3, :cols => 80 }
 
     config.columns[:sentences].options = { :rows => 10, :cols => 80 }
 
-    config.columns = [:category, :expression, :text, :english, :sentences]
+    config.columns = [:polish, :english, :sentences]
     config.subform.layout = :vertical
 
   end
