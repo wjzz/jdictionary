@@ -1,19 +1,21 @@
 class WordsController < ApplicationController
   active_scaffold :word do |config|
     # always show the new word form (useful while configuring the form)
+    # always show the search form
     config.list.always_show_create = false
     config.list.always_show_search = true
 
- #   config.actions.swap :search, :field_search
+    # Enable field search
+    config.actions.swap :search, :field_search
 
     # The order in the form
-    config.columns = [:japanese, :reading, :definition, :category, :tag_list, :comments]
+    config.columns = [:japanese, :reading, :definition, :category, :tags, :comments]
 
     # Fields listed in the main list
-    config.list.columns = [:japanese, :reading, :comments, :tag_list]
+    config.list.columns = [:japanese, :reading, :tags, :comments]
 
     # Virtual ields used in searching
-    #config.search.columns = [:japanese, :reading, :definition, :tag_list, :comments]
+    config.field_search.columns = [:japanese, :reading, :definition, :tags, :comments]
 #    config.columns[:tag_list].search_ui = :string
 
     ## Field configurations

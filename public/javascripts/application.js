@@ -4,8 +4,8 @@
 function selectTag(tagElem) {
     tagElem.toggleClassName('selectedTag');
     var selected_tags = buildTagList();
-    $('record_tag_list').value = selected_tags;
-    $('record_tag_list').focus();
+    $('record_tags').value = selected_tags;
+    $('record_tags').focus();
 };
 
 function updateTagList(selected_tags) {
